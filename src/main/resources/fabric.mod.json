@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "drillfix",
+	"version": "${version}",
+	"name": "Drill Fix",
+	"description": "Odpowiednik HSM: kopanie nie resetuje się, gdy zmienia się paliwo drilla albo Mending naprawia narzędzie. Komenda /drillfix do testów, /pom - ping offset miner.",
+	"authors": ["mikdom"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["pl.drillfix.DrillFix"]
+	},
+	"mixins": [
+		{
+			"config": "drillfix.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

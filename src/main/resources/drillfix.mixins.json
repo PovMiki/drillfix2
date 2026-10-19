@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "pl.drillfix.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"MultiPlayerGameModeMixin",
+		"ClientLevelMixin",
+		"PingMixin",
+		"ClientPacketListenerMixin",
+		"ConnectionMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
